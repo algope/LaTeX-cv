@@ -1,0 +1,196 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\addbibresource{bibliography.bib}
+
+%------------
+\usepackage{enumitem}
+\renewenvironment{entrylist}{%
+  \begin{itemize}[leftmargin=1in]%[leftmargin=*,align=left,itemindent=-\dimexpr\labelwidth+\labelindent+\labelsep\relax]
+}{%
+  \end{itemize}
+}
+\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+\renewcommand{\entry}[4]{%
+  \item[#1]
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{\parsep}%
+  }
+%-------
+
+\begin{document}
+\header{Alejandro }{González}
+       {alejandro.gon.per@gmail.com}
+
+
+% In the aside, each new line forces a line break
+\begin{aside}
+    \section{contact}
+        C/ Castán Tobeñas, 55
+        46018 Valencia-Spain
+        (+34) 717707789
+        ~
+        \href{https://www.linkedin.com/in/algope}{\faLinkedin\ algope } 
+        \href{http://github.com/algope}{\faGithub\ algope}
+        \href{http://twitter.com/algope_}{\faTwitter\ algope}
+    \section{programming}
+        R
+        GO
+        C/C++
+        Python
+        Node.js
+        Ruby on Rails
+        HTML5 + CSS3
+    \section{interests}
+        Politics
+        Big Data
+        Economics
+        Open Data
+        Open Government
+\end{aside}
+
+
+\section{experience}
+
+\begin{entrylist}
+  \entry
+    {current}
+    {CTO and Co-founder}
+    {HUB CÍVICO, Valencia (Spain) \\
+    \href{http://hubcivico.org}{http://hubcivico.org}}
+    {\emph{Hub Cívico is a non-profit initiative aiming to facilitate the use of technology in processes of open government by means of providing specific solutions to real problems. Working with civil society, organizations and institutions, our goal is to accomplish a more effective process of transparency, participation/collaboration and accountability and also to reach a larger number of citizens.}}
+  \entry
+    {Mar15 Jul15}
+    {Intern - Mobile Software Engineer\\
+    \href{http://okode.com}{http://okode.com}}
+    {OKODE, Valencia (Spain)}
+    {\emph{Okode is a technology-based company specialized in innovative global solutions for international customers in different sectors such as insurance, banking, marketing, communications and logistics. We create innovative value-added technology solutions through consulting, web development and mobile applications, business process analysis and deployment of mission critical services in Cloud.\\}
+    Skills: Java, Android, HTML5, CSS3, JavaEE.}
+  \entry
+    {Sep14 Jan15}
+    {Intern - Frontend Developer}
+    {EHUMANLIFE, Inc., Boston (United States)\\
+    \href{http://ehumanlife.com}{http://ehumanlife.com}}
+    {\emph{eHumanLife is a brand new technology that unites the worldwide medical community via a digital platform accessible by computer, tablet, or smartphone, so patients can consult immediately their health status or ask for a second opinion to world renowned doctors from the comfort of their home and with anonymity and complete privacy for their medical records.}\\
+    Skills: JavaScript, JQuery, HTML5, CSS3.}
+  \entry
+    {Feb14 Sep14}
+    {Intern - Software Engineer}
+    {EVERIS, Valencia (Spain) \\
+    \href{http://everis.com}{http://everis.com}}
+    {\emph{Working on ehCOS Suite eHealth project, a set of world-class products that encapsulates hospitals, clinics, health care networks, public or private care centers, as well as other healthcare organizations and all its requirements such as: Electronic Health Record, Enterprise Master Person Index, Patient Management, Patient Safety and Risk Management.}\\
+    Skills: Team work, Software Lifecycle, Testing, Java EE, ZK, PostgreSQL, Oracle DB, Apache Tomcat, Weblogic, Maven2, JMeter, Pentaho.}
+  \entry
+    {Jul13 Jul14}
+    {Vice-chair and Co-founder}
+    {ACM UPV Chapter, Valencia (Spain)\\
+    \href{http://acmupv.webs.upv.es}{http://acmupv.webs.upv.es}}
+    {\emph{The Association for Computing Machinery (ACM) is a U.S.-based international learned society for computing. It was founded in 1947 and is the world's largest and most prestigious scientific and educational computing society. It is a not-for-profit professional membership group. Its membership is more than 100,000 as of 2011.
+    ACM UPV Chapter has born as an extension of this prestigious Association in the Polytechnic University of Valencia. We believe in the benefits that this institution can provide for our students, teachers, researchers, professionals and so on. Our aim is to create a nexus between all of these individuals so they can share knowledge, experiences, curiosities and so forth to, finally, improve their professional baggage.}\\
+    Skills: Leadership, group strategies, motivation, oratory, group management.}
+\end{entrylist}
+\section{education}
+
+\begin{entrylist}
+    \entry
+        {since 2008}
+        {B.Sc. Computer Science }
+        {Polytechnic University of Valencia}
+        {
+        Specialisation in Information Technology
+        \\
+        \\
+        \emph{General Courses}
+        \begin{multicols}{2}
+        \begin{itemize}
+            \item Automata theory 
+            \item Distributed systems 
+            \item Databases and info systems 
+            \item Data structures and algorithms 
+            \item Languages, Technologies and Programming Paradigms
+        \end{itemize}
+        
+        \columnbreak
+        
+        \begin{itemize}
+            \item Parallel computing
+            \item Project management  
+            \item Intelligent systems 
+            \item Software engineering  
+            \item Human-Computer interfaces  
+        \end{itemize}
+        \end{multicols}
+        \emph{Elective Courses}
+        \begin{multicols}{2}
+        \begin{itemize}
+            \item Upper Intermediate English
+            \item Network Services and Systems 
+            \item Statistical methods applied to computer engineering
+        \end{itemize}
+        
+        \columnbreak
+        
+        \begin{itemize}
+            \item Web development 
+            \item Database technology
+            \item Application Integration 
+            \item User Centred Development 
+        \end{itemize}
+        \end{multicols}
+        }
+    \entry
+        {2006 to 2008}
+        {Spanish Baccalaureate}
+        {CES Mestral, Eivissa}
+        {Specialisation in Sciences and Engineering}
+    \entry
+        {2002 to 2006}
+        {Secondary school}
+        {CES Mestral, Eivissa}
+        {}
+\end{entrylist}
+
+
+
+\section{applications}
+
+\begin{entrylist}
+  \entry
+    {2012}
+    {Who did I forget ?}
+    {\href{http://whodidiforget.com}{whodidiforget.com}}
+    {Guest list recommendation for Facebook events based on friends already attending the event.}
+  \entry
+    {2011}
+    {Fellows}
+    {\href{http://fellows-exp.com}{fellows-exp.com}}
+    {Automatic community detection among Facebook Friends in order to validate the \emph{cohesion} measure, creation of friend lists.}
+  \entry
+    {2008}
+    {Happy Flu}
+    {\href{http://happyflu.com}{happyflu.com}}
+    {Experiment aimed to measure viral spreading of content across the blogosphere.}
+\end{entrylist}
+
+\section{publications}
+
+Put your publications here!
+
+%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
+% 
+%\printbibsection{article}{article in peer-reviewed journal}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%\printbibsection{misc}{other publications}
+%\printbibsection{report}{research reports}
+
+\end{document}
