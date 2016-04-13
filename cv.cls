@@ -113,6 +113,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
         orange\or%
         orange\or%
         orange\or%
+        orange\or%
+        orange\or%
         orange\else%
         headercolor\fi%
     } #1#2#3%
