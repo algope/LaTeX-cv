@@ -1,0 +1,5 @@
+[0] Config.pm:340> INFO - This is Biber 2.4
+[0] Config.pm:343> INFO - Logfile is '/Users/alejandro/work/CV_AGP/.texpadtmp/cv.blg'
+[63] biber-darwin:287> INFO - === Wed Apr 13, 2016, 11:50:24
+[84] Biber.pm:347> INFO - Reading '/Users/alejandro/work/CV_AGP/.texpadtmp/cv.bcf'
+[205] Utils.pm:147> WARN - No data sources defined!
