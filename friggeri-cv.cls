@@ -5,6 +5,7 @@
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}%
 }
+\DeclareTextCommandDefault{\nobreakspace}{\leavevmode\nobreak\ } 
 \ProcessOptions\relax
 \LoadClass{article}
 
