@@ -54,7 +54,7 @@
 ItalicFont=texgyreheros-italic.otf,
 BoldItalicFont=texgyreheros-bolditalic.otf]
 {texgyreheros-regular.otf}
-\newfontfamily\thinfont[]{Lato-Light.ttf}
+\newfontfamily\thinfont[]{Lato-Hairline.ttf}
 \newfontfamily\headingfont[]{texgyreheros-bold.otf}
 
 \defaultfontfeatures{Mapping=tex-text}
@@ -190,3 +190,5 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
+
+
