@@ -9,6 +9,8 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
+% Needed to make header & footer effeciently
+\RequirePackage{fancyhdr}
 
 %%%%%%%%%%
 % Colors %
@@ -23,7 +25,7 @@
 \definecolor{lightgray}{HTML}{999999}
 
 \definecolor{green}{HTML}{C2E15F}
-\definecolor{orange}{HTML}{FDA333}
+\definecolor{orange}{HTML}{990ae3}
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
@@ -47,7 +49,7 @@
 % Fonts %
 %%%%%%%%%
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont
 [BoldFont=texgyreheros-bold.otf,
@@ -192,3 +194,30 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \RequirePackage{hyperref}
 
 
+
+%% Header & Footer
+% Set offset to each header and offset
+\fancyhfoffset{0em}
+% Remove head rule
+\renewcommand{\headrulewidth}{0pt}
+% Clear all header & footer fields
+\fancyhf{}
+% Enable if you want to make header or footer using fancyhdr
+\pagestyle{fancy}
+
+
+\newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lightgray} #1}}
+% Define a footer for CV
+% Usage: \makecvfooter{<left>}{<center>}{<right>}
+\newcommand*{\makecvfooter}[3]{
+  \fancyfoot{}
+  \fancyfoot[L]{
+    \footerstyle{#1}
+  }
+  \fancyfoot[C]{
+    \footerstyle{#2}
+  }
+  \fancyfoot[R]{
+    \footerstyle{#3}
+  } 
+}
