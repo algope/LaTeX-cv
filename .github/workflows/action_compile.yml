@@ -27,4 +27,4 @@ jobs:
       with:
         # The root LaTeX file to be compiled
         root_file: cv.tex
-        args: -lualatex --file-line-error --interaction=nonstopmode
+        args: -xelatex -file-line-error -interaction=nonstopmode
