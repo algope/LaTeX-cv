@@ -50,6 +50,7 @@
 %%%%%%%%%
 \RequirePackage[quiet]{fontspec}
 \RequirePackage{unicode-math}
+\defaultfontfeatures{Extension = .otf}
 
 \newfontfamily\bodyfont
 [BoldFont=texgyreheros-bold.otf,
