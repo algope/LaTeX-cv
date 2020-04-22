@@ -25,7 +25,7 @@
 \definecolor{lightgray}{HTML}{999999}
 
 \definecolor{green}{HTML}{C2E15F}
-\definecolor{orange}{HTML}{990ae3}
+\definecolor{orange}{HTML}{009fda}
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
@@ -204,6 +204,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \fancyhf{}
 % Enable if you want to make header or footer using fancyhdr
 \pagestyle{fancy}
+
 
 
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lightgray} #1}}
